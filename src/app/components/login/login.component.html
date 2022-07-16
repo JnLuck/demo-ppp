@@ -1,1 +1,20 @@
-<p>login works!</p>
+<div class="body">
+    <div class="login">
+
+
+        <form *ngIf="!log" [formGroup]="form" (ngSubmit)="ingresar()"> 
+            <img src="./assets/icon/user.png" width="50%">
+            <h1>Login</h1>
+                <mat-form-field appearance="fill" class="dimensions">
+                    <mat-label>User</mat-label>
+                    <input type="text" matInput autocomplete="off" formControlName="user">
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="dimensions">
+                    <mat-label>Password</mat-label>
+                    <input type="password" matInput autocomplete="off" formControlName="password">
+                </mat-form-field>
+                <br>
+                <button type="submit" mat-raised-button class="dimensions button" [disabled]="form.invalid">Login</button>   
+        </form>
+    </div>
+</div>

@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { ConveniosRoutingModule } from './convenios-routing.module';
 import { ConveniosComponent } from './convenios.component';
+
 
 
 @NgModule({
@@ -10,8 +9,7 @@ import { ConveniosComponent } from './convenios.component';
     ConveniosComponent
   ],
   imports: [
-    CommonModule,
-    ConveniosRoutingModule
+    CommonModule
   ]
 })
 export class ConveniosModule { }
